@@ -3,7 +3,6 @@
     public enum Role
     {
         user,
-        interviewer,
         admin
     }
 }
