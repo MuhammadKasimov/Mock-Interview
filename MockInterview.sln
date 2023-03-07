@@ -3,9 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MockInterview.Domain", "MockInterview.Domain\MockInterview.Domain.csproj", "{5752F568-1E76-4997-A8A9-837383C3F45A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{2BC65929-F7F9-4E1C-8F35-60375702E522}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockInterview.Data", "MockInterview.Data\MockInterview.Data.csproj", "{8D98D2F8-CA48-4D69-8CCE-672196B2E0DD}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5752F568-1E76-4997-A8A9-837383C3F45A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5752F568-1E76-4997-A8A9-837383C3F45A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5752F568-1E76-4997-A8A9-837383C3F45A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5752F568-1E76-4997-A8A9-837383C3F45A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D98D2F8-CA48-4D69-8CCE-672196B2E0DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D98D2F8-CA48-4D69-8CCE-672196B2E0DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D98D2F8-CA48-4D69-8CCE-672196B2E0DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D98D2F8-CA48-4D69-8CCE-672196B2E0DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5752F568-1E76-4997-A8A9-837383C3F45A} = {2BC65929-F7F9-4E1C-8F35-60375702E522}
+		{8D98D2F8-CA48-4D69-8CCE-672196B2E0DD} = {2BC65929-F7F9-4E1C-8F35-60375702E522}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {65B49B93-E8AC-41A6-B86D-CF52774DDA5E}
