@@ -2,9 +2,9 @@
 {
     public enum Degree
     {
-        junior,
-        middle,
-        senior,
-        teamLeader
+        Junior,
+        Middle,
+        Senior,
+        TeamLead
     }
 }

@@ -1,9 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MockInterview.Domain.Entities.Interviewers;
 using MockInterview.Domain.Entities.Interviews;
-using MockInterview.Domain.Entities.NewFolder;
 using MockInterview.Domain.Entities.Questions;
 using MockInterview.Domain.Entities.Quizzes;
+using MockInterview.Domain.Entities.Users;
 
 namespace MockInterview.Data.DbContexts
 {
@@ -22,12 +21,25 @@ namespace MockInterview.Data.DbContexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<User>();
-            modelBuilder.Entity<Interviewer>();
-            modelBuilder.Entity<Interview>();
-            modelBuilder.Entity<Quiz>();
-            modelBuilder.Entity<Question>();
-            modelBuilder.Entity<QuestionAnswer>();
+            modelBuilder.Entity<User>()
+                .HasIndex(u => u.Email)
+                .IsUnique();
+            modelBuilder.Entity<User>()
+                .HasIndex(u => u.PhoneNumber)
+                .IsUnique();
+            modelBuilder.Entity<User>()
+                .HasIndex(u => u.Username)
+                .IsUnique();
+            
+            modelBuilder.Entity<Interviewer>()
+                .HasIndex(i => i.Email)
+                .IsUnique();            
+            modelBuilder.Entity<Interviewer>()
+                .HasIndex(i => i.PhoneNumber)
+                .IsUnique();            
+            modelBuilder.Entity<Interviewer>()
+                .HasIndex(i => i.Username)
+                .IsUnique();
         }
     }
 }

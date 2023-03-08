@@ -1,7 +1,6 @@
 ﻿using MockInterview.Domain.Commons;
-using MockInterview.Domain.Entities.Interviewers;
-using MockInterview.Domain.Entities.NewFolder;
 using System;
+using MockInterview.Domain.Entities.Users;
 
 namespace MockInterview.Domain.Entities.Interviews
 {

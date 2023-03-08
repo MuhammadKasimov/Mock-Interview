@@ -1,4 +1,6 @@
-﻿namespace MockInterview.Domain.Commons
+﻿using System;
+
+namespace MockInterview.Domain.Commons
 {
     public class Auditable
     {
